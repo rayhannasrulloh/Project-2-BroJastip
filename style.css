@@ -35,11 +35,12 @@ nav {
     background: #E6E9DF;
     position: sticky;
     top: 0;
-    padding: 0 55px;
+    padding: 1.4rem 7%;
+    height: 80px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
 }
 
 nav .nav-logo {
@@ -63,20 +64,21 @@ nav .nav-logo h3 {
 }
 
 /* navbar link menu */
-.navbar-list .link {
+nav .navbar-list .link {
     display: inline-flex;
     gap: 50px;
 }
 
-.link {
+nav .navbar-list .link {
     font-size: 15px;
     padding: 30px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .link:hover {
+    border: 30px;
+    border-color: #fff;
     font-weight: 600;
-    text-decoration: underline;
     font-size: 15px;
 }
 
@@ -120,6 +122,7 @@ nav button#menuButton {
     }
 }
 
+/* tablet */
 @media screen and (max-width: 768px) {
 
     nav {
