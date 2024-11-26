@@ -89,7 +89,11 @@ nav button {
     border-radius: 15px;
     border: 1px solid #1c1e53;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+}
+
+nav .nav-extra i{
+    font-size: 30px;
 }
 
 nav button:hover {
@@ -104,6 +108,34 @@ nav button#menuButton {
     font-size: 24px;
     padding: 7px;
 }
+
+header {
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .left img{
+    width: 640px;
+}
+
+header .right {
+    width: 600px;
+}
+
+header .right h3{
+    font-size: 45px;
+}
+
+header .right h2{
+    color: #90B231;
+    font-family: 'Cherry Bomb One', sans-serif;
+    font-size: 80px;
+    font-weight: 200;
+}
+
 
 /* media screen */
 @media screen and (max-width: 992px) {
