@@ -25,9 +25,7 @@ a {
     color: black;
 }
 
-li {
-    list-style: none;
-}
+li { list-style: none; }
 
 
 /* navbar */
@@ -155,12 +153,14 @@ header .right h2{
 
 
 /* media screen */
+/* laptop */
 @media screen and (max-width: 992px) {
 
     nav .nav-extra {
         display: flex;
         gap: 20px;
     }
+
     nav button {
         display: inline;
         position: relative;
@@ -212,12 +212,20 @@ header .right h2{
 
 /* mobile */
 @media screen and (max-width: 576px) {
-
+    nav {
+        margin: 0 -2rem;
+    }
+    nav .nav-logo a {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    nav .nav-extra {
+        gap: 2px;
+    }
+    
     nav ul li a {
         font-size: 13px;
     }
 
-    nav .nav-logo a {
-        font-size: 18px;
-    }
 }
