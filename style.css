@@ -106,6 +106,7 @@ nav button#menuButton {
     padding: 7px;
 }
 
+/* header */
 header {
     padding: 0 80px;
     height: calc(100vh - 80px);
@@ -140,6 +141,7 @@ header .right h2{
     margin: 1rem;
     padding: 1rem 2rem;
     font-size: 1rem;
+    font-weight: 700;
     color: #fff;
     background-color: #90B231;
     border-radius: 15px;
@@ -168,21 +170,17 @@ header .right h2{
 
     nav ul {
         gap: 20px;
-        display: none;
     }
 
     nav ul li a {
         font-size: 15px;
     }
 
-    nav.open ul {
-        display: flex;
-    }
-
     nav button#menuButton {
         display: flex;
     }
 
+    /* header */
     header {
         text-align: center;
         display: flex;
@@ -204,8 +202,28 @@ header .right h2{
         justify-content: space-between;
         padding: 0 42px;
     }
+    nav .navbar-list{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        background-color: #90B231;
+        width: 18rem;
+        height: 60vh;
+        transition: 0.3s;
+        border-radius: 20px;
+    }
 
-    
+    nav .navbar-list.open {
+        left: 0;
+    }
+
+    nav .navbar-list a{
+        color: #fff;
+        display: block;
+        margin-left: 3rem;
+        margin-bottom: -2rem;
+        font-size: 2rem;
+    }
 
     
 }
@@ -225,7 +243,7 @@ header .right h2{
     }
     
     nav ul li a {
-        font-size: 13px;
+        font-size: 10px;
     }
 
 }
