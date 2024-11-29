@@ -155,8 +155,31 @@ header .right h2{
 
 
 /* media screen */
-/* laptop */
+/* ipad */
 @media screen and (max-width: 992px) {
+
+    nav .navbar-list{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        background-color: #90B231;
+        width: 18rem;
+        height: 60vh;
+        transition: 0.3s;
+        border-radius: 20px;
+    }
+
+    nav .navbar-list.open {
+        left: 0;
+    }
+
+    nav .navbar-list a{
+        color: #fff;
+        display: block;
+        margin-left: 3rem;
+        margin-bottom: -2rem;
+        font-size: 2rem;
+    }
 
     nav .nav-extra {
         display: flex;
@@ -167,6 +190,7 @@ header .right h2{
         display: inline;
         position: relative;
     }
+
 
     nav ul {
         gap: 20px;
@@ -197,39 +221,18 @@ header .right h2{
 
 /* tablet */
 @media screen and (max-width: 768px) {
-
     nav {
         justify-content: space-between;
         padding: 0 42px;
     }
-    nav .navbar-list{
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        background-color: #90B231;
-        width: 18rem;
-        height: 60vh;
-        transition: 0.3s;
-        border-radius: 20px;
-    }
-
-    nav .navbar-list.open {
-        left: 0;
-    }
-
-    nav .navbar-list a{
-        color: #fff;
-        display: block;
-        margin-left: 3rem;
-        margin-bottom: -2rem;
-        font-size: 2rem;
-    }
+    
 
     
 }
 
 /* mobile */
 @media screen and (max-width: 576px) {
+    
     nav {
         margin: 0 -2rem;
     }
@@ -245,5 +248,6 @@ header .right h2{
     nav ul li a {
         font-size: 10px;
     }
+
 
 }

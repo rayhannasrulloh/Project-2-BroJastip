@@ -5,7 +5,17 @@
 // }
 
 $(document).ready(function () {
-    $("#menuButton").on("click", function () {
-        $(".navbar-list").toggleClass("open");
+    const menu = $("#menuButton");
+    const navbarList = $(".navbar-list");
+
+    menu.on("click", function () {
+        navbarList.toggleClass("open");
+    });
+
+    $(document).on("click", function (e) {
+        if (!menu.is(e.target) && !menu.has(e.target).length && 
+            !navbarList.is(e.target) && !navbarList.has(e.target).length) {
+            navbarList.removeClass("open");
+        }
     });
 });
