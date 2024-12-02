@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -25,7 +26,9 @@ a {
     color: black;
 }
 
-li { list-style: none; }
+li {
+    list-style: none;
+}
 
 
 /* 
@@ -91,7 +94,7 @@ nav button {
     transition: all 0.2s ease;
 }
 
-nav .nav-extra i{
+nav .nav-extra i {
     font-size: 30px;
 }
 
@@ -136,14 +139,14 @@ nav #searchButton input {
 }
 
 nav #searchInput {
-    display: none; 
+    display: none;
     padding: 10px;
     transition: width 0.3s ease;
 }
 
 nav #searchInput.active {
     display: inline-block;
-    width: 200px; 
+    width: 200px;
 }
 
 nav #searchInput::placeholder {
@@ -170,7 +173,7 @@ header {
     justify-content: space-between;
 }
 
-header .left{
+header .left {
     position: relative;
     width: 640px;
 }
@@ -179,11 +182,11 @@ header .right {
     width: 600px;
 }
 
-header .right h3{
+header .right h3 {
     font-size: 45px;
 }
 
-header .right h2{
+header .right h2 {
     margin-top: -2rem;
     color: #90B231;
     font-family: 'Cherry Bomb One', sans-serif;
@@ -203,16 +206,63 @@ header .right h2{
     transition: all 0.3s ease;
 }
 
-.check:hover{
+.check:hover {
     background-color: #465813;
 }
 
+/* main */
+main {
+    width: 100%;
+    height: 1000px;
+    margin: 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+main .first-container {
+    flex: 1;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #FFB950;
+    color: #fff;
+    height: 500px;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .first-container h3{
+    text-align: center;
+    font-family: 'Cherry Bomb One';
+    font-weight: 100;
+    font-size: 4rem;
+}
+main .first-container img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+main .sec-container {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff;
+    height: 500px;
+    border-radius: 30px;
+}
+
+main .sec-container h2 {
+    font-size: 1rem;
+}
 
 /* media screen */
 /* pad */
 @media screen and (max-width: 992px) {
 
-    nav .navbar-list{
+    nav .navbar-list {
         position: absolute;
         top: 100%;
         left: -100%;
@@ -227,7 +277,7 @@ header .right h2{
         left: 0;
     }
 
-    nav .navbar-list a{
+    nav .navbar-list a {
         color: #fff;
         display: block;
         margin-left: 3rem;
@@ -254,14 +304,13 @@ header .right h2{
     }
 
     nav #searchButton {
-        
-        position: relative;
+        display: inline-block;
         padding: 10px 20px;
     }
 
     nav #searchInput.active {
         display: inline-block;
-        width: 100px; 
+        width: 100px;
     }
 
     nav button#menuButton {
@@ -280,7 +329,7 @@ header .right h2{
         display: none;
     }
 
-    
+
 }
 
 /* tablet */
@@ -289,26 +338,28 @@ header .right h2{
         justify-content: space-between;
         padding: 0 42px;
     }
-    
 
-    
+
+
 }
 
 /* mobile */
 @media screen and (max-width: 576px) {
-    
+
     nav {
         margin: 0 -2rem;
     }
+
     nav .nav-logo a {
         display: flex;
         align-items: center;
         font-size: 20px;
     }
+
     nav .nav-extra {
         gap: 2px;
     }
-    
+
     nav ul li a {
         font-size: 10px;
     }
