@@ -19,3 +19,30 @@ $(document).ready(function () {
         }
     });
 });
+
+// search
+$(document).ready(function () {
+    const searchBtn = $("#searchButton");
+    const input = $("#searchInput");
+
+    searchBtn.on("click", function (e) {
+        e.stopPropagation();
+        if (input.hasClass("active")) {
+            input.removeClass("active").fadeOut();
+        } else {
+            input.addClass("active")
+            .fadeIn().focus();
+        }
+    });
+
+    input.on("click", function (e) {
+        e.stopPropagation();
+    });
+
+    $(document).on("click", function () {
+        $("#search-input")
+        .removeClass("active")
+        .fadeOut();
+    });
+});
+
