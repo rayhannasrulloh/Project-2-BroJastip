@@ -1,0 +1,90 @@
+:root {
+    --yellowcollor: #FFB950;
+    --bluecolor: #88BFE0;
+    --orangecolor: #EE9357;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Cherry Bomb One', sans-serif;
+    background-color: #E6E9DF;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: inherit;
+    display: block;
+}
+
+/* head */
+.header {
+    text-align: center;
+    margin-block: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* main */
+main .store-list {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+main .store-list .row1 > * {
+    flex: 1 1 50%;
+    aspect-ratio: 1;
+}
+
+main .row1 {
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+}
+
+main .pancong,
+main .martabak {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--yellowcollor);
+    border-radius: 30px;
+}
+main .pancong img {
+    display: flex;
+    align-items: center;
+}
+
+main .martabak {
+    background-color: var(--bluecolor);
+}
+
+
+
+
+
+
+
