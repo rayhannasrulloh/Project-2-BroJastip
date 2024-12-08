@@ -219,6 +219,7 @@ section.first-section{
     height: 500px;
     padding-top: 80px;
     margin: 10px;
+    margin-bottom: 7rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -257,11 +258,9 @@ section .first-container img {
 
 /* top 3 picks */
 section .sec-container{
-    
     flex: 1;
     padding: 2rem;
     background-color: #fff;
-    max-height: 500px;
     border-radius: 30px;
 }
 
@@ -293,18 +292,20 @@ table.top-lists .topping {
 
 /* option */
 section.option-section {
-    margin-top: 2rem;
-    margin-block: 2rem ;
+    margin: 1rem;
     padding: 2rem;
     background-color: #EE9357;
     border-radius: 30px;
-    margin: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 section.option-section h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-family: 'Cherry Bomb One';
     color: #fff;
 }
 select#menuSelect {
@@ -339,6 +340,11 @@ section.second-section {
     display: flex;
     margin-right: -1rem;
 }
+section.second-section h2 {
+    font-family: 'Cherry Bomb One';
+    letter-spacing: 3px;
+    font-size: 3rem;
+}
 section .about {
     display: flex;
     flex-wrap: wrap;
@@ -348,6 +354,133 @@ section .about {
     padding: 2rem;
     background-color: #88BFE0;
     border-radius: 25px;
+}
+
+/* contact us */
+section.contact-section {
+    padding: 40px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-inline: 15px;
+    background: white;
+    border-radius: 20px;
+}
+
+.contact-section h2 {
+    font-family: 'Cherry Bomb One', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-inline: 30px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--orangecolor);
+}
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn-submit {
+    margin-left: 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #e5533d;
+}
+.form-buttons #sendToWhatsApp {
+    background-color: #90B231;
+}
+.form-buttons #sendToWhatsApp:hover {
+    background-color: #425311;
+}
+
+#responseMessage {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    margin-top: 2rem;
+    background-color: #90B231;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.social-links i {
+    vertical-align: middle;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 /* media screen */

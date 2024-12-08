@@ -4,6 +4,7 @@
 //     navbarList.classList.toggle('open')
 // }
 
+// smooth scrolling
 $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -30,7 +31,7 @@ $('a[href*="#"]')
         }
     });
 
-
+// humberger menu
 $(document).ready(function () {
     const menu = $("#menuButton");
     const navbarList = $(".navbar-list");
@@ -73,6 +74,7 @@ $(document).ready(function () {
     });
 });
 
+// select menu
 $(document).ready(function () {
     const menuData = {
         menu1: {
@@ -110,3 +112,49 @@ $(document).ready(function () {
         }
     });
 });
+
+// contact us
+$(document).ready(function () {
+    $("#sendToWhatsApp").on("click", function () {
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const message = $("#message").val();
+
+        if (name === "" || email === "" || message === "") {
+            $("#responseMessage").text("All fields are required.").css("color", "red").show();
+            return;
+        }
+
+        const whatsappNumber = "6282278989976";
+        const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. I have a message: ${message}`;
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.open(whatsappURL, "_blank");
+
+        $("#responseMessage").text("Redirecting you to WhatsApp...").css("color", "green").show();
+    });
+
+    // default
+    $("#contactForm").on("submit", function (e) {
+        e.preventDefault(); 
+
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const message = $("#message").val();
+
+        if (name === "" || email === "" || message === "") {
+            $("#responseMessage").text("All fields are required.").css("color", "red").show();
+            return;
+        }
+
+        setTimeout(function () {
+            $("#responseMessage")
+                .text("Thank you for your message, " + name + "! We will get back to you soon.")
+                .css("color", "green")
+                .show();
+
+            $("#contactForm")[0].reset();
+        }, 1000);
+    });
+});
+
