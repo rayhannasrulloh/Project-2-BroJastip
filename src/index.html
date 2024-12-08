@@ -39,9 +39,11 @@
             </ul>
         </div>
         <div class="nav-extra">
-            <button id="cartButton">
-                <i class='bx bx-cart'></i>
-            </button>
+            <a href="../store/store.html">
+                <button id="cartButton">
+                    <i class='bx bx-cart'></i>
+                </button>
+            </a>
             <a href="../sign-in/Login.html">
                 <button id="userButton">
                     <i class='bx bxs-user'></i>
@@ -71,13 +73,13 @@
             <p>
                 Easiest solutions to get your food without moving your feet.
             </p>
-            <button class="check">Check it Out</button>
+            <a href="#first-section" class="check">Check it Out</a>
         </div>
     </header>
     <!-- header -->
 
     <!-- main -->
-    <section class="first-section">
+    <section class="first-section" id="first-section">
         <div class="first-container">
             <h3>PANCONG LUMER</h3>
             <img src="../img/pancong-lumer.png" alt="">
@@ -85,36 +87,59 @@
         <div class="sec-container">
             <h2>Top 3-Picks</h2>
             <div class="table-container">
-            <table class="top-lists">
-                <tr>
-                    <td><img src="../img/pancong2.png" alt=""></td>
-                    <td>Pancong Lumer</td>
-                    <td class="topping">Chocolate</td>
-                    <td>Rp10,000</td>
-                </tr>
-                <tr>
-                    <td><img src="../img/martabak1.png" alt=""></td>
-                    <td>Martabak</td>
-                    <td class="topping">Pandan</td>
-                    <td>Rp12,000</td>
-                </tr>
-                <tr>
-                    <td><img src="../img/gacoan1.png" alt=""></td>
-                    <td>Gacoan</td>
-                    <td class="topping">Level 1</td>
-                    <td>Rp14,000</td>
-                </tr>
-            </table>
-        </div>
+                <table class="top-lists">
+                    <tr>
+                        <td><img src="../img/pancong2.png" alt=""></td>
+                        <td>Pancong Lumer</td>
+                        <td class="topping">Chocolate</td>
+                        <td>Rp10,000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../img/martabak1.png" alt=""></td>
+                        <td>Martabak</td>
+                        <td class="topping">Pandan</td>
+                        <td>Rp12,000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../img/gacoan1.png" alt=""></td>
+                        <td>Gacoan</td>
+                        <td class="topping">Level 1</td>
+                        <td>Rp14,000</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
     <!-- main -->
+
+    <!-- menu select option -->
+    <section class="option-section">
+        <h1>Select Menu</h1>
+        <select id="menuSelect">
+            <option value="">-- Select Menu --</option>
+            <option value="menu1">Pancong</option>
+            <option value="menu2">Martabak</option>
+            <option value="menu3">Kebab</option>
+        </select>
+
+        <div id="menuDetail" class="menu-detail">
+            <img id="menuImage" src="" alt="Menu Image">
+            <h2 id="menuName"></h2>
+            <ul id="menuToppings"></ul>
+            <p id="menuPrice"></p>
+        </div>
+    </section>
 
     <!-- about section -->
     <section class="second-section">
         <div class="about" id="about">
             <h2>About</h2>
-            <p>BroJastip is a platform designed to connect food enthusiasts with trusted personal shoppers. We specialize in delivering local and hard-to-find delicacies right to your door. Whether it’s a famous street snack or a traditional specialty, our mission is to bring your cravings to life.Our team is dedicated to ensuring every order is handled with care and precision, offering a seamless experience from browsing to delivery. We believe that everyone deserves easy access to their favorite foods, no matter where they are.</p>
+            <p>BroJastip is a platform designed to connect food enthusiasts with trusted personal shoppers. We
+                specialize in delivering local and hard-to-find delicacies right to your door. Whether it’s a famous
+                street snack or a traditional specialty, our mission is to bring your cravings to life.Our team is
+                dedicated to ensuring every order is handled with care and precision, offering a seamless experience
+                from browsing to delivery. We believe that everyone deserves easy access to their favorite foods, no
+                matter where they are.</p>
         </div>
     </section>
     <!-- about section -->
@@ -123,7 +148,7 @@
 
 
     <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../jquery/jquery.min.js"></script>
     <!-- script -->
     <script src="script.js"></script>
 

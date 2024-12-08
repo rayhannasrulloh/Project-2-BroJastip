@@ -193,9 +193,12 @@ header .right h2 {
     font-size: 80px;
     font-weight: 200;
 }
+header .right p{
+    margin-bottom: 1.6rem;
+}
 
 .check {
-    margin: 1rem;
+    margin: 2rem;
     padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: 700;
@@ -214,6 +217,7 @@ header .right h2 {
 section.first-section{
     width: 100%;
     height: 500px;
+    padding-top: 80px;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -251,6 +255,7 @@ section .first-container img {
     width: 400px;
 }
 
+/* top 3 picks */
 section .sec-container{
     
     flex: 1;
@@ -286,7 +291,48 @@ table.top-lists .topping {
     font-weight: normal;
 }
 
-
+/* option */
+section.option-section {
+    margin-top: 2rem;
+    margin-block: 2rem ;
+    padding: 2rem;
+    background-color: #EE9357;
+    border-radius: 30px;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.option-section h1 {
+    color: #fff;
+}
+select#menuSelect {
+    margin: 10px;
+    padding-block: 10px;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    width: 200px;
+}
+.menu-detail {
+    color: #fff;
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu-detail img {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    max-width: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+.menu-detail p{
+    font-size: large;
+    font-weight: bold;
+}
 
 /* about section */
 section.second-section {
