@@ -35,7 +35,7 @@ li {
  -- navbar -- 
 */
 nav {
-    background: #E6E9DF;
+    background: rgba(230, 233, 223, 70%);
     position: sticky;
     top: 0;
     padding: 1.4rem 7%;
@@ -78,7 +78,7 @@ nav .navbar-list .link {
     transition: all 0.2s ease;
 }
 
-.link:hover {
+nav .navbar-list .link:hover {
     font-weight: 700;
     font-size: 15px;
 }
@@ -233,12 +233,14 @@ main .first-container {
     justify-content: center;
 }
 
-main .first-container h3{
+main .first-container h3 {
     text-align: center;
     font-family: 'Cherry Bomb One';
     font-weight: 100;
     font-size: 4rem;
+    filter: drop-shadow(1px 5px 5px #000);
 }
+
 main .first-container img {
     display: flex;
     align-items: center;
@@ -248,14 +250,38 @@ main .first-container img {
 
 main .sec-container {
     flex: 1;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #fff;
     height: 500px;
     border-radius: 30px;
 }
 
 main .sec-container h2 {
-    font-size: 1rem;
+    font-size: 2rem;
+}
+
+table.top-lists img{
+    width: 120px;
+}
+table.top-lists {
+    font-weight: bold;
+    width: 100%;
+}
+table.top-lists td {
+    padding: 10px;
+    text-align: left;
+}
+table.top-lists .topping {
+    font-weight: normal;
+}
+
+/* about */
+section .about {
+    color: #fff;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    background-color: #88BFE0;
+    border-radius: 25px;
 }
 
 /* media screen */
